@@ -1,63 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<!-- Header -->
 <head>
+  <meta charset="utf-8">
+  <title></title>
 
-<!-- Background Design -->
-<style media="screen">
-  body {
-    background-image: url("images/bg-desktop.svg");
-  }
-</style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-<!-- Stylesheet -->
-<link rel="stylesheet" href="css/styles.css">
+  <!-- Body Style -->
+  <style media="screen">
+    body {
+      background-image: url("images/bg-desktop2.svg");
+      background-color: hsl(257, 40%, 49%);
+      padding: 3em;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+  </style>
 
-<!-- Font Awesoome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
 </head>
 
-<!-- Body -->
+<body>
+  <div class="container-fluid">
 
-<body id="body">
+    <!-- HEADER -->
+    <div class="row logo-row">
+      <img id="logo" class="col-1" src="images/logo.svg" alt="">
+    </div>
 
-  <img class="logo" src="images/logo.svg" alt="">
+    <!-- MAIN -->
 
-  <!-- Main -->
-  <div class="main">
+    <div class="row main-row">
 
-    <img class="mockup" src="images/illustration-mockups.svg" alt="">
+      <!-- ILLUSTRATION   -->
+      <div id="illustration-div" class="col-lg-6">
+        <img class="img-fluid illustration" src="images/illustration-mockups.svg" alt="">
+      </div>
 
-    <!-- Content -->
+      <!-- CONTENT   -->
+      <div id="content-div" class="col-lg-6">
+        <h1 id="header">Build The Community Your Fans Will Love</h1>
+        <p id="paragraph">Huddle re-imagines the way we build communities.
+          You have a voice, but so does your audience.
+          Create connections with your users as you engage in genuine discussions.</p>
+        <button class="btn btn-lg btn-light rounded-pill" type="button" name="button"><span>Register</span></button>
 
-    <div class="content">
-      <h1 id="header">Build The Community Your Fans Will Love</h1>
-      <p id="paragraph">Huddle re-imagines the way we build communities.
-        You have a voice, but so does your audience.
-        Creat connections with your users as you engage in genuine discussions.</p>
-      <button class="btn btn-light btn-lg rounded-pill p-3" type="button" name="button"><span>Register</span></button>
+        <!-- ICONS -->
+        <div id="icons-row" class="row justify-content-end">
 
-      <!-- Icons -->
-      <div class="icons">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
+          <div id="icons" class="col-lg-2">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
       </div>
 
     </div>
 
-
   </div>
+
+
+
+
+
 
 </body>
 
